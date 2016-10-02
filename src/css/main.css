@@ -1,0 +1,70 @@
+body {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #333;
+	background-color: #fff;
+}
+.b {
+	font-weight: bold;
+}
+.mt5{
+	margin-top: 5px;
+}
+.mb5{
+	margin-bottom: 5px;
+}
+.ml5{
+	margin-left: 5px;
+}
+.mr5{
+	margin-right: 5px;
+}
+.display-none{
+    display:none;
+}
+.truncate {
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.tools-city-state{
+	margin-top: 5px;
+}
+.tools-zip {
+	margin-top: 5px;
+}
+.tools-city-state input,
+.tools-zip input{
+	margin-top:5px
+}
+.search-random {
+	margin-top: 10px;
+}
+#results-container .result{
+	height: 300px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#results-container .result .r-pod{
+	height: 100%;
+}
+#results-container .result .pet-image{
+	margin-top: 5px;
+}
+#results-container .result .pet-image img{
+	height: 140px;
+	width:100%;
+}
+#results-container .result .select-pet{
+	margin-top: 15px;
+	width: 100%;
+}
+#myModal .pet-image img{
+	width: 100%;
+}
+
+#myModal .pet-desc{
+	word-wrap: break-word;
+}

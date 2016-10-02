@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Pet Finder</title>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	    <link rel="stylesheet" href="css/main.css">
+
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="h2 col-xs-12">
+					PET FINDER
+				</div>
+			</div>
+			<div id="search-tools" class="row mt5">
+				<div class="col-xs-12 col-sm-6 tools-animal">
+					<input id="s-animal" type="text" class="form-control" placeholder="Search Animal">
+				</div>
+				<div class="col-xs-12">
+					<div class="row">
+						<div class="col-sm-6 col-xs-12 tools-city-state">
+							Search City and State
+							<input id="s-city-state" type="text" class="form-control" placeholder="e.g. orlando, fl">
+						</div>
+						<div class="col-sm-6 col-xs-12 tools-zip">
+							or ZIP
+							<input id="s-zip" type="text" class="form-control" placeholder="Search Zip Code">
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 search-random">
+					<div class="btn-group btn-group-justified" role="group" aria-label="...">
+						<div class="btn-group" role="group">
+							<button id="search-pets" type="button" class="btn btn-default">SEARCH</button>
+						</div>
+						<div class="btn-group" role="group">
+							<button id="random-pets" type="button" class="btn btn-default">RANDOM</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="results-container" class="row"></div>
+		</div>
+		<div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title"></h4>
+					</div>
+					<div class="modal-body"></div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="js/md5.js"></script>
+		<script src="js/petAPI.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
